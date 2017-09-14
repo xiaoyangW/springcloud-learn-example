@@ -1,4 +1,4 @@
-package com.cloud.test1;
+package com.cloud.user;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
