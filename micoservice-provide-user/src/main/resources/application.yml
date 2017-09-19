@@ -2,7 +2,16 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://admin:admin123@localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id:
+
 spring:
   application:
     name: micoserice-user
+management:
+  port: 54001
+  health:
+    mail:
+      enabled: false
