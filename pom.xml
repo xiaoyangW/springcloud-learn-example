@@ -11,6 +11,7 @@
     <modules>
         <module>micoservice-provide-user</module>
         <module>microservice-discovery-eureka</module>
+        <module>microservice-ribbon</module>
     </modules>
 
     <properties>
@@ -24,7 +25,6 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.0.0.M3</version>
     </parent>
-
     <dependencyManagement>
         <dependencies>
             <dependency>

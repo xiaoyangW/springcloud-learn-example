@@ -5,13 +5,10 @@ eureka:
       defaultZone: http://admin:admin123@localhost:8761/eureka/
   instance:
     prefer-ip-address: true
-    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+    instance-id: ${spring.application.name}:${server.port}
 
 spring:
   application:
     name: micoserice-user
-management:
-  port: 54001
-  health:
-    mail:
-      enabled: false
+server:
+  port: 9998
