@@ -6,11 +6,9 @@ server:
    port: 8055
 eureka:
   client:
-    healthcheck:
-        enabled: true
     serviceUrl:
       defaultZone: http://admin:admin123@localhost:8761/eureka/
   instance:
     prefer-ip-address: true
-    instance-id:
+    instance-id: ${spring.application.name}:${server.port}
 

@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.itmuch.cloud</groupId>
-    <artifactId>microservice-spring-cloud</artifactId>
+    <artifactId>spring-cloud-microservice</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
@@ -12,6 +12,8 @@
         <module>micoservice-provide-user</module>
         <module>microservice-discovery-eureka</module>
         <module>microservice-ribbon</module>
+        <module>microservice-feign</module>
+        <module>microservice-feign-customize</module>
     </modules>
 
     <properties>
@@ -36,6 +38,7 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
     <repositories>
         <repository>
             <id>spring-milestones</id>
