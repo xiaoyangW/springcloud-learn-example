@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>micoservice-provide-user</module>
+        <module>microservice-provide-user</module>
         <module>microservice-discovery-eureka</module>
         <module>microservice-ribbon</module>
         <module>microservice-feign</module>

@@ -8,7 +8,7 @@
 
 	<parent>
 		<groupId>com.itmuch.cloud</groupId>
-		<artifactId>microservice-spring-cloud</artifactId>
+		<artifactId>spring-cloud-microservice</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 

@@ -8,7 +8,7 @@
 
 	<parent>
 		<groupId>com.itmuch.cloud</groupId>
-		<artifactId>microservice-spring-cloud</artifactId>
+		<artifactId>spring-cloud-microservice</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
@@ -29,7 +29,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-feign</artifactId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
 		</dependency>
 		<dependency><!--生产环境监控-->
 			<groupId>org.springframework.boot</groupId>
