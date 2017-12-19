@@ -1,4 +1,4 @@
-package com.itmuch.cloud;
+package com.spring.cloud;
 
 
 import org.springframework.boot.SpringApplication;

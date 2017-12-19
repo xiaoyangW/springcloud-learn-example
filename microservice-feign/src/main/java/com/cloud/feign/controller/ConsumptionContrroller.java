@@ -16,8 +16,12 @@ import org.springframework.web.client.RestTemplate;
 @RequestMapping("/consumation")
 public class ConsumptionContrroller {
 
-    @Autowired
     private IFeignDao iFeignDao;
+
+    @Autowired
+    public ConsumptionContrroller(IFeignDao iFeignDao) {
+        this.iFeignDao=iFeignDao;
+    }
 
     @GetMapping("/getuser")
     public ResponseDto getUser(){
