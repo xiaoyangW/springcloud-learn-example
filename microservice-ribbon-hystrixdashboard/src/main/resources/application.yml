@@ -1,0 +1,17 @@
+server:
+  port: 8020
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:admin123@localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
+spring:
+  application:
+    name: microservice-ribbon-hystrixdashboard
+#management:
+#  port: 54001
+#  health:
+#    mail:
+#      enabled: false
