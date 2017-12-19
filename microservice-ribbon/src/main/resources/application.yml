@@ -1,4 +1,5 @@
-
+server:
+  port: 8010
 eureka:
   client:
     serviceUrl:
@@ -9,10 +10,10 @@ eureka:
 spring:
   application:
     name: micoserice-ribbon
-management:
-  port: 54001
-  health:
-    mail:
-      enabled: false
-server:
-  port: 8010
+#management:
+ # port: 54001
+ # health:
+  #  mail:
+   #   enabled: false
+
+

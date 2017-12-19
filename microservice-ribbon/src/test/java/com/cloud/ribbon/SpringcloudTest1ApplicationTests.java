@@ -1,4 +1,4 @@
-package com.cloud.ribbon.user;
+package com.cloud.ribbon;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
