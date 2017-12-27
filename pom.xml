@@ -16,6 +16,8 @@
         <module>microservice-feign</module>
         <module>microservice-feign-customize</module>
         <module>microservice-ribbon-hystrixdashboard</module>
+        <module>microservice-hystrixdashboard-turbine</module>
+        <module>microservice-gateway-zuul</module>
     </modules>
 
     <properties>
