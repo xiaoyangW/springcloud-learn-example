@@ -1,5 +1,5 @@
 server:
-  port: 8020
+  port: 8000
 eureka:
   client:
     serviceUrl:
@@ -9,7 +9,13 @@ eureka:
     instance-id: ${spring.application.name}:${server.port}
 spring:
   application:
-    name: microservice-ribbon-hystrixdashboard
+    name: hystrix-turbine-dashboard,micoserice-ribbon
+turbine:
+  app-config: microservice-ribbon-hystrixdashboard
+  aggregator:
+    cluster-config: default
+  cluster-name-expression: new String("default")
+
 #management:
 #  port: 54001
 #  health:

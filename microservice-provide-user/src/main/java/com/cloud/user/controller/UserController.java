@@ -13,7 +13,7 @@ public class UserController {
     public ResponseDto getUser(){
         ResponseDto dto = new ResponseDto();
         dto.setCode(0);
-        dto.setMsg("ok");
+        dto.setMsg("user--------------111");
         return dto;
     }
 
