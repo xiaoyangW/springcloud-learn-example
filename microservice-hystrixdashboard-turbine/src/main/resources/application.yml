@@ -9,9 +9,10 @@ eureka:
     instance-id: ${spring.application.name}:${server.port}
 spring:
   application:
-    name: hystrix-turbine-dashboard,micoserice-ribbon
+    name: hystrix-turbine-dashboard
+
 turbine:
-  app-config: microservice-ribbon-hystrixdashboard
+  app-config: microservice-ribbon-hystrixdashboard,micoserice-ribbon
   aggregator:
     cluster-config: default
   cluster-name-expression: new String("default")
