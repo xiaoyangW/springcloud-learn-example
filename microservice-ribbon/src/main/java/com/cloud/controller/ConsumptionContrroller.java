@@ -22,7 +22,7 @@ public class ConsumptionContrroller {
     }
 
     @HystrixCommand(fallbackMethod = "error")
-    @GetMapping("/getuser")
+    @GetMapping("/getuser2")
     public ResponseDto getUser(){
         return restTemplate.getForObject("http://MICOSERICE-USER/user/getuser",ResponseDto.class);
     }
