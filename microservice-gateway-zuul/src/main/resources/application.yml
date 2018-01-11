@@ -12,3 +12,8 @@ spring:
     name: micoserice-gateway-zuul
 server:
   port: 8090
+
+# zuul 路由配置
+zuul:
+  routes:
+    micoserice-user: /user/**
