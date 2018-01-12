@@ -11,3 +11,5 @@ micoservice-provide-user2`：服务提供者，两个消费者便于负载均衡
 `microservice-feign`:声明式REST客户端Feign使用示例，和reign中自带的hystrix的简单使用
 
 `microservice-ribbon-hystrixdashboard`：ribbon中配置hystrix-dashboard,feign的配置与ribbon无异
+
+`micoserice-gateway-zuul`：api-gateway zuul使用示例，路由配置，header配置等
