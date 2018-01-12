@@ -26,3 +26,4 @@ server:
 #    user-routes: #user-routes只是一个路由名称可任意起名
 #      service-id: micoserice-user
 #      path: /user/** #service-id 对应路径
+#  ignored-services: /**/admin/** #忽略所有包含/admin/的路径
