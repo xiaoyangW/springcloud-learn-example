@@ -20,9 +20,9 @@ server:
   #忽略微服务,多个微服务用逗号隔开,忽略所有的服务时用'*'表示
 #  ignored-services: micoserice-feign,micoserice-ribbon
 
-#方式二，
-zuul:
-  routes:
-    user-routes: #user-routes只是一个路由名称可任意起名
-      service-id: micoserice-user
-      path: /user/** #service-id 对应路径
+#方式二，效果和方式一一样
+#zuul:
+#  routes:
+#    user-routes: #user-routes只是一个路由名称可任意起名
+#      service-id: micoserice-user
+#      path: /user/** #service-id 对应路径
