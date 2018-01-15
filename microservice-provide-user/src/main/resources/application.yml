@@ -9,6 +9,6 @@ eureka:
 
 spring:
   application:
-    name: micoserice-user-v1
+    name: micoserice-user
 server:
   port: 9998

@@ -15,10 +15,10 @@ server:
 
 # zuul 路由配置 方式一
 #zuul:
-#  routes:
+ # routes:
 #    micoserice-user: /user/**
   #忽略微服务,多个微服务用逗号隔开,忽略所有的服务时用'*'表示
-#  ignored-services: micoserice-feign,micoserice-ribbon
+ # ignored-services: micoserice-feign,micoserice-ribbon
 
 #方式二，效果和方式一一样
 #zuul:

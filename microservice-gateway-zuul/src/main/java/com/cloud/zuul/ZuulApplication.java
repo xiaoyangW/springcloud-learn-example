@@ -20,10 +20,10 @@ public class ZuulApplication {
 	 * 如 micoserice-user-v1
 	 * @return
 	 */
-	@Bean
+	/*@Bean
 	public PatternServiceRouteMapper serviceRouteMapper(){
 		return new PatternServiceRouteMapper(
 				"(?<name>^.+)-(?<version>v.+$)",
 				"${version}/${name}");
-	}
+	}*/
 }
