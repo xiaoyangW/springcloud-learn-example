@@ -21,6 +21,7 @@ import java.nio.charset.Charset;
 public class MyFallbackProvider implements ZuulFallbackProvider {
     @Override
     public String getRoute() {
+        //路由配置micoserice-user，如果全部用"*"代替
         return "micoserice-user";
     }
 
