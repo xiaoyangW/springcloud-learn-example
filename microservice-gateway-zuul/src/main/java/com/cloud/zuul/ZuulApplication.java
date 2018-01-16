@@ -1,5 +1,6 @@
 package com.cloud.zuul;
 
+import com.cloud.zuul.config.RequestLogFilter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
@@ -26,4 +27,13 @@ public class ZuulApplication {
 				"(?<name>^.+)-(?<version>v.+$)",
 				"${version}/${name}");
 	}*/
+
+	/**
+	 * 添加zuul过滤器Bean
+	 * @return RequestLogFilter
+	 */
+	@Bean
+	public RequestLogFilter getRequestLogFilter(){
+		return new RequestLogFilter();
+	}
 }
