@@ -30,6 +30,7 @@ public class MyFallbackProvider implements ZuulFallbackProvider {
         return new ClientHttpResponse() {
             @Override
             public HttpStatus getStatusCode() throws IOException {
+                //回退的状态码
                 return HttpStatus.OK;
             }
 
@@ -55,6 +56,7 @@ public class MyFallbackProvider implements ZuulFallbackProvider {
 
             @Override
             public HttpHeaders getHeaders() {
+                //header设置
                 HttpHeaders headers = new HttpHeaders();
                 MediaType mediaType = new MediaType("application","json", Charset.forName("UTF-8"));
                 headers.setContentType(mediaType);
