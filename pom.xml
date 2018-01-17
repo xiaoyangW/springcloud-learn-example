@@ -18,6 +18,7 @@
         <module>microservice-ribbon-hystrixdashboard</module>
         <module>microservice-hystrixdashboard-turbine</module>
         <module>microservice-gateway-zuul</module>
+        <module>microservice-config</module>
     </modules>
 
     <properties>
