@@ -10,15 +10,15 @@ server:
   port: 9001
 spring:
   application:
-    name: microserice-config
+    name: microservice-config
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/xiaoyangW/SpringCloud.git #git仓库地址
-          search-paths: microserice-config #配置仓库路径
-          username: username #git账户名
-          password: password #git账户密码
+          uri: https://github.com/xiaoyangW/SpringCloud/ #git仓库地址
+          search-paths: microservice-config #配置仓库路径（目标文件路径）
+          username: your name #git账户名
+          password: your password #git账户密码
 
 
 
