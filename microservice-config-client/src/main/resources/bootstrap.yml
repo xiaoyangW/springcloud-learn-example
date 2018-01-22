@@ -5,3 +5,6 @@ spring:
       uri: http://localhost:9001/ #配置中心的具体位置
       profile: dev
       label: master
+management:
+  security:
+    enabled: false #取消权限拦截 默认开启
