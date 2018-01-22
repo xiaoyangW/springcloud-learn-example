@@ -1,8 +1,7 @@
 spring:
-  application:
-    name: microserice-config-client
   cloud:
     config:
-      uri: http://localhost:9004/
+      name: config-client
+      uri: http://localhost:9001/ #配置中心的具体位置
       profile: dev
       label: master
