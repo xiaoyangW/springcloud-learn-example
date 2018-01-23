@@ -5,3 +5,10 @@ spring:
     name: microserice-config-client
 
 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:admin123@localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}

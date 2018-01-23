@@ -2,9 +2,13 @@ spring:
   cloud:
     config:
       name: config-client
-      uri: http://localhost:9001/ #配置中心的具体位置
+     # uri: http://localhost:9001/ #配置中心的具体位置
       profile: dev
       label: master
+      discovery:
+        #表示使用服务发现组件中的Config Server，不自己指定Config Server的uri，默认false
+        enabled: true
+        service-id: microservice-config
 management:
   security:
     enabled: false #取消权限拦截 默认开启

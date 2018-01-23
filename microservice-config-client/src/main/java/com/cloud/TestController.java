@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  *使用@RefreshScope开启手动刷新配置开启refresh节点 使用命令 curl -X POST http://hostname/refresh
  */
 @RestController
-
+@RefreshScope
 public class TestController {
     @Value("${config.version}")
     private String version;

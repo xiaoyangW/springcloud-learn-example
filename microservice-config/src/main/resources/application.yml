@@ -15,10 +15,10 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/xiaoyangW/SpringCloud/ #git仓库地址
+          uri: https://github.com/xiaoyangw/springcloud/ #git仓库地址
           search-paths: microservice-config #配置仓库路径（目标文件路径）
-          username: your name #git账户名
-          password: your password #git账户密码
+          username: 1483863489@qq.com #git账户名
+          password: xiao02yang24 #git账户密码
 
 
 
