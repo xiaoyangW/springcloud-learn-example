@@ -36,11 +36,13 @@ public class MyFallbackProvider implements ZuulFallbackProvider {
 
             @Override
             public int getRawStatusCode() throws IOException {
+                //数字类型状态码
                 return 200;
             }
 
             @Override
             public String getStatusText() throws IOException {
+                //状态文本
                 return "ok";
             }
 
@@ -51,6 +53,7 @@ public class MyFallbackProvider implements ZuulFallbackProvider {
 
             @Override
             public InputStream getBody() throws IOException {
+                //回退响应体
                 return new ByteArrayInputStream("服务不可用稍后再试".getBytes());
             }
 
