@@ -19,6 +19,8 @@
         <module>microservice-hystrixdashboard-turbine</module>
         <module>microservice-gateway-zuul</module>
         <module>microservice-config</module>
+        <module>microservice-config-client</module>
+        <module>microservice-config-client-cloud-bus</module>
     </modules>
 
     <properties>
@@ -32,28 +34,6 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.9.RELEASE</version>
     </parent>
-    <!--<dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Finchley.M2</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
-    <repositories>
-        <repository>
-            <id>spring-milestones</id>
-            <name>Spring Milestones</name>
-            <url>https://repo.spring.io/libs-milestone</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-    </repositories>-->
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -65,16 +45,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-    <!--<dependencies>
-        <dependency>
-            <groupId></groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
-        </dependency>
-        <dependency>
-            <groupId></groupId>
-            <artifactId>spring-cloud-starter-eureka</artifactId>
-        </dependency>
-    </dependencies>-->
     <repositories>
         <repository>
             <id>spring-milestones</id>
