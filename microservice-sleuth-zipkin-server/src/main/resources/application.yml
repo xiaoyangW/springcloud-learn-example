@@ -1,16 +1,5 @@
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://admin:admin123@localhost:8761/eureka/
-  instance:
-    prefer-ip-address: true
-    instance-id: ${spring.application.name}:${server.port}
-
 spring:
   application:
-    name: micoserice-zipkin
+    name: micoserice-zipkin-server
 server:
   port: 9994
-logging:
-  level: info
