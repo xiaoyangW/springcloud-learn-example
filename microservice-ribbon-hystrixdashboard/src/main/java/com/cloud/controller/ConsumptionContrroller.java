@@ -24,7 +24,7 @@ public class ConsumptionContrroller {
     @HystrixCommand(fallbackMethod = "error")
     @GetMapping("/getuser")
     public ResponseDto getUser(){
-        return restTemplate.getForObject("http://MICOSERICE-USER/user/getuser",ResponseDto.class);
+        return restTemplate.getForObject("http://MICOSERICE-USER/zipkin/getuser",ResponseDto.class);
     }
 
     public ResponseDto error(){

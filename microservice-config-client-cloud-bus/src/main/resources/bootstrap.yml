@@ -1,7 +1,7 @@
 spring:
   rabbitmq: #添加rabbitmq配置
     host: 192.168.146.128
-    port: 5672
+    port: 5672 #management 15672
     username: admin
     password: admin
   cloud:

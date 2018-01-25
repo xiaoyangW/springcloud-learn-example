@@ -16,16 +16,16 @@ server:
 # zuul 路由配置 方式一
 #zuul:
  # routes:
-#    micoserice-user: /user/**
+#    micoserice-zipkin: /zipkin/**
   #忽略微服务,多个微服务用逗号隔开,忽略所有的服务时用'*'表示
  # ignored-services: micoserice-feign,micoserice-ribbon
 
 #方式二，效果和方式一一样
 #zuul:
 #  routes:
-#    user-routes: #user-routes只是一个路由名称可任意起名
-#      service-id: micoserice-user
-#      path: /user/** #service-id 对应路径
+#    zipkin-routes: #zipkin-routes只是一个路由名称可任意起名
+#      service-id: micoserice-zipkin
+#      path: /zipkin/** #service-id 对应路径
 #  ignored-services: /**/admin/** #忽略所有包含/admin/的路径
 #  sensitive-headers:  Cookie,Set-Cookie,Authorization #设置敏感header信息
 #  ignored-headers: header1,header2 #设置忽略header，设置后header1,header2将不会传到其他的微服务。

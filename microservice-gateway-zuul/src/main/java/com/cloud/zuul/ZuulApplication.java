@@ -18,7 +18,7 @@ public class ZuulApplication {
 	/**
 	 * 使用正则表达式方式路由，
 	 * 添加该方式后,在原有的服务中，appname-v1,
-	 * 如 micoserice-user-v1
+	 * 如 micoserice-zipkin-v1
 	 * @return
 	 */
 	/*@Bean
