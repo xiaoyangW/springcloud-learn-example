@@ -21,6 +21,7 @@
         <module>microservice-config</module>
         <module>microservice-config-client</module>
         <module>microservice-config-client-cloud-bus</module>
+        <module>microservice-sleuth-zipkin-server</module>
     </modules>
 
     <properties>
