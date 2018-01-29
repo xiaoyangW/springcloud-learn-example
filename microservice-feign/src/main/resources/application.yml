@@ -2,6 +2,8 @@
 spring:
   application:
     name: micoserice-feign
+  zipkin:
+    base-url: http://localhost:9994
 server:
    port: 8050
 eureka:
@@ -13,4 +15,4 @@ eureka:
       prefer-ip-address: true
 feign:
   hystrix:
-     enabled: true
+    enabled: true
