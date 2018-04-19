@@ -10,6 +10,11 @@ eureka:
 spring:
   application:
     name: micoserice-gateway-zuul
+  zipkin:
+    base-url: http://localhost:9994
+  sleuth:
+    sampler:
+      percentage: 1.0
 server:
   port: 8090
 
@@ -29,3 +34,4 @@ server:
 #  ignored-services: /**/admin/** #忽略所有包含/admin/的路径
 #  sensitive-headers:  Cookie,Set-Cookie,Authorization #设置敏感header信息
 #  ignored-headers: header1,header2 #设置忽略header，设置后header1,header2将不会传到其他的微服务。
+

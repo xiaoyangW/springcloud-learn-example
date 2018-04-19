@@ -10,8 +10,6 @@ eureka:
 spring:
   application:
     name: micoserice-ribbon
-  zipkin:
-    base-url: http://localhost:9994
 
 #management:
  # port: 54001
@@ -19,4 +17,8 @@ spring:
   #  mail:
    #   enabled: false
 
-
+  zipkin:
+    base-url: http://localhost:9994
+  sleuth:
+    sampler:
+      percentage: 1.0
