@@ -10,5 +10,10 @@ eureka:
 spring:
   application:
     name: micoserice-user
+  zipkin:
+    base-url: http://localhost:9994
+  sleuth:
+    sampler:
+      percentage: 1.0
 server:
   port: 9997
