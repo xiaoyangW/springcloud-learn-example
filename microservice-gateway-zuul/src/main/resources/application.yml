@@ -11,7 +11,7 @@ spring:
   application:
     name: micoserice-gateway-zuul
   zipkin:
-    base-url: http://localhost:9994
+    base-url: http://192.168.146.131:9994
   sleuth:
     sampler:
       percentage: 1.0
