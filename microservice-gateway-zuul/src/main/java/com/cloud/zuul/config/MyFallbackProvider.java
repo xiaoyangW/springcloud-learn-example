@@ -1,6 +1,7 @@
 package com.cloud.zuul.config;
 
 import org.springframework.beans.factory.annotation.Configurable;
+import org.springframework.cloud.netflix.zuul.filters.route.FallbackProvider;
 import org.springframework.cloud.netflix.zuul.filters.route.ZuulFallbackProvider;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -18,7 +19,7 @@ import java.nio.charset.Charset;
  *  zuul中使用hystrix的回退
  */
 @Component
-public class MyFallbackProvider implements ZuulFallbackProvider {
+public class MyFallbackProvider implements FallbackProvider {
     @Override
     public String getRoute() {
         //路由配置micoserice-zipkin，如果全部用"*"代替
@@ -66,5 +67,10 @@ public class MyFallbackProvider implements ZuulFallbackProvider {
                 return headers;
             }
         };
+    }
+
+    @Override
+    public ClientHttpResponse fallbackResponse(Throwable cause) {
+        return null;
     }
 }
